@@ -1,0 +1,150 @@
+@import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    max-height: 64px;
+}
+
+input {
+    font-family: 'Circular Std Book';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    opacity: 0.8;
+    border: none;
+    margin-left: 1rem;
+}
+
+/* components */
+
+.margin--left {
+    margin-left: auto;
+}
+
+.margin--right {
+    margin-right: auto;
+}
+
+/* header */
+.header__heading-wrap {
+    margin: 2rem 3.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__nav-list {
+    display: flex;
+    margin-right: 3rem;
+}
+
+.header__nav-list-item {
+    font-family: 'Circular Std Book';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    margin-right: 2.6rem;
+}
+
+.header__nav-list-item:last-child {
+    margin-right: 0rem;
+}
+
+.header__nav-icon {
+    margin-right: 1.5rem;
+}
+
+/* main */
+
+.main__wrap {
+    display: flex;
+    margin: 4.3rem 3.5rem 0;
+    max-height: 783px;
+}
+
+.main__sb {
+     display: flex;
+}
+
+.main__sb-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.6rem;
+}
+
+.main__sb-heading {
+    font-family: 'Circular Std Book';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 47px;
+}
+
+.main__sb-list {
+    margin-top: 2.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__sb-item {
+    font-family: 'Circular Std Book';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15.7099px;
+    line-height: 24px;
+    margin-top: 1.5rem;
+}
+
+.main__sb-item:first-child {
+    margin-top: 0;
+}
+
+.main__content-wrap {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+}
+
+.main__row-u, .main__row-d{
+    display: flex;
+    column-gap: 1.3rem;
+}
+
+.main__content-box{
+    display: flex;
+    row-gap: 1.3rem;
+    column-gap: 1.3rem;
+}
+
+.main__row-u .main__content-box:first-child{
+    flex-direction: column;
+}
+
+.main__row-d .main__content-box:last-child{
+    flex-direction: column;
+}
+
