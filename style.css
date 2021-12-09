@@ -107,6 +107,7 @@ input {
     margin-top: 2.8rem;
     display: flex;
     flex-direction: column;
+    height: 783px;
 }
 
 .main__sb-item {
@@ -120,6 +121,16 @@ input {
 
 .main__sb-item:first-child {
     margin-top: 0;
+}
+
+.main__sb-item:last-child {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+}
+
+.main__sb-img {
+    margin-right: 1rem;
 }
 
 .main__content-wrap {
