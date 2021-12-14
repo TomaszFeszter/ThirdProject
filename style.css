@@ -1,12 +1,10 @@
-@import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+/* @import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book); */
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-
 
 ul,
 ol {
@@ -15,14 +13,25 @@ ol {
 
 body {
     font-family: 'Circular Std Book';
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
-header {
-    display: flex;
-    justify-content: center;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2.87rem 3.25rem 2rem 3.25rem;
 }
+
+.sidebar {
+    max-width: 12.5rem;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+.main-column {
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
 
 input {
     font-family: 'Circular Std Book';
@@ -33,18 +42,23 @@ input {
     opacity: 0.8;
     border: none;
     margin-left: 1rem;
+    margin-right: auto;
 }
 
 /* components */
 
 
 /* header */
-.header__heading-wrap {
-    margin: 2rem 3.5rem 0;
+.header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+}
+
+.header__nav {
+    display: flex;
+    margin-left: auto;
+    max-width: 68.75rem;
 }
 
 .header__nav-list {
@@ -69,11 +83,9 @@ input {
 }
 
 /* main */
-
-.main__wrap {
+.main {
     display: flex;
-    margin-top: 4.3rem;
-    max-height: 783px;
+    margin-top: 3rem;
 }
 
 .main__sb {
@@ -83,8 +95,6 @@ input {
 .main__sb-wrap {
     display: flex;
     flex-direction: column;
-    margin-right: 2.6rem;
-    margin-left: 3.5rem;
 }
 
 .main__sb-heading {
@@ -98,7 +108,7 @@ input {
     margin-top: 2.8rem;
     display: flex;
     flex-direction: column;
-    height: 783px;
+
 }
 
 .main__sb-item {
@@ -106,17 +116,13 @@ input {
     font-weight: 600;
     font-size: 15.7099px;
     line-height: 24px;
-    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.main__sb-item:first-child {
-    margin-top: 0;
-}
-
-.main__sb-item:last-child {
-    margin-top: auto;
+.main__sb-help {
     display: flex;
     align-items: center;
+    margin-top: auto;
 }
 
 .main__sb-img {
@@ -125,16 +131,14 @@ input {
 
 .main__box-container {
     display: flex;
-    flex-wrap: wrap;
     margin-left: auto;
-    margin-right: 3.5rem;
-    max-width: 1099px;
+    flex-wrap: wrap;
+    max-width: 68.75rem;
 }
 
 .main__box {
     display: flex;
-    row-gap: 1.3rem;
-    column-gap: 1.3rem;
+    justify-content: space-between;
 }
 
 .row-column-gap {
@@ -142,52 +146,33 @@ input {
     column-gap: 1.3rem;
 }
 
+.main__box {
+    width: calc(50% - 0.65rem);
+    aspect-ratio: 1.42;
+}
+
 .main__box--horizontal {
     flex-direction: column;
 }
 
-.main__item--vertical {
+.main__item--vertical,
+.main__item--horizontal {
     border-radius: 15px;
     overflow: hidden;
+
 }
 
-.main__item--vertical img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+.main__item--vertical {
+    width: calc(50% - 0.65rem);
 }
 
+.main__item--horizontal {
+    height: calc(50% - 0.65rem);
+}
+
+.main__item--vertical img,
 .main__item--horizontal img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-
-
-
-/*
-.main__content-wrap {
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.3rem;
-}
-
-.main__row-u, .main__row-d{
-    display: flex;
-    column-gap: 1.3rem;
-}
-
-.main__content-box{
-    display: flex;
-    row-gap: 1.3rem;
-    column-gap: 1.3rem;
-}
-
-.main__row-u .main__content-box:first-child{
-    flex-direction: column;
-}
-
-.main__row-d .main__content-box:last-child{
-    flex-direction: column;
-} */

@@ -12,24 +12,26 @@
 </head>
 
 <body>
-    <header>
-        <div class="header__heading-wrap">
-            <img src="img/logo.svg" alt="Caped logo">
-            <img class="margin--left" src="img/search.svg" alt="search icon">
-            <input class="margin--right" type="text" class="input" placeholder="Search store">
-            <ul class="header__nav-list">
-                <li class="header__nav-list-item">products</li>
-                <li class="header__nav-list-item">story</li>
-                <li class="header__nav-list-item">manufacturing</li>
-                <li class="header__nav-list-item">packaging</li>
-            </ul>
-            <img class="header__nav-icon" src="img/basket.svg" alt="basket icon">
-            <img src="img/person.svg" alt="account">
-        </div>
-    </header>
-    <main>
-        <div class="main__wrap">
-            <section class="main__sb">
+    <div class="container">
+        <header class="header">
+            <div class="sidebar"><img src="img/logo.svg" alt="Caped logo"></div>
+            <div class="main-column">
+                <div class="header__nav">
+                    <img src="img/search.svg" alt="search icon">
+                    <input type="text" class="input" placeholder="Search store">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-list-item">products</li>
+                        <li class="header__nav-list-item">story</li>
+                        <li class="header__nav-list-item">manufacturing</li>
+                        <li class="header__nav-list-item">packaging</li>
+                    </ul>
+                    <img class="header__nav-icon" src="img/basket.svg" alt="basket icon">
+                    <img src="img/person.svg" alt="account">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__sb sidebar">
                 <div class="main__sb-wrap">
                     <h1 class="main__sb-heading">Explore</h1>
                     <ul class="main__sb-list">
@@ -40,40 +42,17 @@
                         <li class="main__sb-item">&#129336; Activewear</li>
                         <li class="main__sb-item">&#127873; Gift & Living</li>
                         <li class="main__sb-item">&#128142; Inspiration</li>
-                        <li class="main__sb-item">
-                            <figure class="main__sb-img"><img src="/img/mess.svg" alt="message icon"></figure>Help
-                            Center
-                        </li>
                     </ul>
+                    <div class="main__sb-help">
+                        <figure class="main__sb-img"><img src="/img/mess.svg" alt="message icon"></figure>Help Center
+                    </div>
                 </div>
             </section>
-            <!-- <section class="main__content-wrap">
-                <div class="main__row-u">
-                     figure zamiast
-                    <div class="main__content-box">
-                        <img src="img/b1u.svg" alt="GET UP TO 50% OFF">
-                        <img src="img/b1d.svg" alt="hello SUMMER 50% OFF">
-                    </div>
-                    <div class="main__content-box">
-                        <img src="img/b2l.svg" alt="Woman">
-                        <img src="img/b2r.svg" alt="Woman">
-                    </div>
-                </div>
-                <div class="main__row-d">
-                    <div class="main__content-box">
-                        <img src="img/b3l.svg" alt="Woman">
-                        <img src="img/b3r.svg" alt="Woman">
-                    </div>
-                    <div class="main__content-box">
-                        <img src="img/b4u.svg" alt="Trending & Hot">
-                        <img src="img/b4d.svg" alt="Buy it for the first time">
-                    </div>
-                </div>
-            </section> -->
-            <section class="main__box-container row-column-gap">
+            <section class="main__box-container row-column-gap main-column">
                 <div class="main__box main__box--horizontal">
                     <figure class="main__item--horizontal"><img src="img/b1u.svg" alt="GET UP TO 50% OFF"></figure>
-                    <figure class="mian__item--horizontal"><img src="img/b1d.svg" alt="hello SUMMER 50% OFF"></figure>
+                    <figure class="main__item--horizontal"><img src="img/b1d.svg" alt="hello SUMMER 50% OFF">
+                    </figure>
                 </div>
                 <div class="main__box">
                     <figure class="main__item--vertical"><img src="img/b2l.svg" alt="Woman"></figure>
@@ -84,15 +63,13 @@
                     <figure class="main__item--vertical"><img src="img/b3r.svg" alt="Woman"></figure>
                 </div>
                 <div class="main__box main__box--horizontal">
-                    <figure class="mian__item--horizontal"><img src="img/b4u.svg" alt="Trending & Hot"></figure>
-                    <figure class="mian__item--horizontal"><img src="img/b4d.svg" alt="Buy it for the first time">
+                    <figure class="main__item--horizontal"><img src="img/b4u.svg" alt="Trending & Hot"></figure>
+                    <figure class="main__item--horizontal"><img src="img/b4d.svg" alt="Buy it for the first time">
                     </figure>
                 </div>
             </section>
-    </main>
-    <footer>
-
-    </footer>
+        </main>
+    </div>
 </body>
 
 </html>
