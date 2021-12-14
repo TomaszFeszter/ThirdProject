@@ -114,7 +114,7 @@ input {
 .main__sb-item {
     font-style: normal;
     font-weight: 600;
-    font-size: 15.7099px;
+    font-size: 1rem;
     line-height: 24px;
     margin-bottom: 1.5rem;
 }
@@ -123,6 +123,9 @@ input {
     display: flex;
     align-items: center;
     margin-top: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .main__sb-img {
@@ -162,8 +165,17 @@ input {
 
 }
 
+.main__item--vertical::before {
+    content: url('img/like.png');
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+}
+
+
 .main__item--vertical {
     width: calc(50% - 0.65rem);
+    position: relative;
 }
 
 .main__item--horizontal {
