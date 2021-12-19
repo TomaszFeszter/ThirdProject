@@ -485,4 +485,19 @@ input {
     .search {
         right: 8rem;
     }
+
+    .main__sb-img {
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .main__sb-img {
+        margin-right: 0;
+    }
+
+    .main__sb-help {
+        padding: 0 0.5rem;
+    }
 }
