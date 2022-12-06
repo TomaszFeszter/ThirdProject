@@ -65,9 +65,6 @@ input {
 .search {
   display: flex;
   margin-right: auto;
-}
-
-.search__input {
   cursor: pointer;
 }
 
@@ -93,8 +90,12 @@ input {
   display: flex;
 }
 
-.header__nav-icon {
+.header__nav-icon:not(:last-child) {
   margin-right: 1.5rem;
+}
+
+.header__nav-img {
+  cursor: pointer;
 }
 
 /* main */
@@ -195,6 +196,7 @@ input {
 
 .main__item--horizontal {
   height: calc(50% - 0.65rem);
+  cursor: pointer;
 }
 
 .main__item--vertical img,
