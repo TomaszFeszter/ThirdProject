@@ -97,11 +97,7 @@ input {
   margin-right: 1.5rem;
 }
 
-.header__nav-icon img {
-  cursor: pointer;
-}
-
-.nav-img {
+.nav-img img {
   cursor: pointer;
 }
 
