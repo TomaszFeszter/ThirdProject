@@ -97,6 +97,14 @@ input {
   margin-right: 1.5rem;
 }
 
+.header__nav-icon img {
+  cursor: pointer;
+}
+
+.nav-img {
+  cursor: pointer;
+}
+
 /* main */
 .main {
   display: flex;
