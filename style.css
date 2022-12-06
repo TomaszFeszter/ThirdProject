@@ -199,6 +199,7 @@ input {
 
 .main__item--horizontal {
   height: calc(50% - 0.65rem);
+  cursor: pointer;
 }
 
 .main__item--vertical img,
