@@ -68,12 +68,12 @@ input {
   cursor: pointer;
 }
 
-.header__nav-list {
+.header__nav__list {
   display: flex;
   margin-right: 3rem;
 }
 
-.header__nav-list-item {
+.header__nav__list__item {
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -82,7 +82,7 @@ input {
   cursor: pointer;
 }
 
-.header__nav-list-item:last-child {
+.header__nav__list__item:last-child {
   margin-right: 0rem;
 }
 
@@ -108,25 +108,25 @@ input {
   display: flex;
 }
 
-.main__sb-wrap {
+.main__sb__wrap {
   display: flex;
   flex-direction: column;
 }
 
-.main__sb-heading {
+.main__sb__heading {
   font-style: normal;
   font-weight: 800;
   font-size: 30px;
   line-height: 47px;
 }
 
-.main__sb-list {
+.main__sb__list {
   margin-top: 2.8rem;
   display: flex;
   flex-direction: column;
 }
 
-.main__sb-item {
+.main__sb__list__item {
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -135,7 +135,7 @@ input {
   cursor: pointer;
 }
 
-.main__sb-help {
+.main__sb__link {
   display: flex;
   align-items: center;
   margin-top: auto;
@@ -145,11 +145,11 @@ input {
   cursor: pointer;
 }
 
-.main__sb-img {
+.main__sb__link__img {
   margin-right: 1rem;
 }
 
-.main__box-container {
+.main__box__container {
   display: flex;
   margin-left: auto;
   flex-wrap: wrap;
@@ -213,7 +213,7 @@ input {
 }
 
 @media (max-width: 1375px) {
-  .main__sb-img {
+  .main__sb__link__img {
     margin-right: 0.5rem;
     margin-left: -1rem;
   }
@@ -224,7 +224,7 @@ input {
     padding: 1.87rem 2.25rem 1rem 2.25rem;
   }
 
-  .main__sb-wrap {
+  .main__sb__wrap {
     padding-right: 1rem;
   }
 }
@@ -234,11 +234,11 @@ input {
     max-width: 7.5rem;
   }
 
-  .header__nav-list {
+  .header__nav__list {
     margin-right: 1.5rem;
   }
 
-  .header__nav-list-item {
+  .header__nav__list__item {
     line-height: 22px;
     margin-right: 2rem;
   }
@@ -248,7 +248,7 @@ input {
     right: 1rem;
   }
 
-  .main__sb-img {
+  .main__sb__link__img {
     margin-left: -0.5rem;
   }
 }
@@ -258,7 +258,7 @@ input {
     padding: 1.2rem 1.5rem 1rem 1.5rem;
   }
 
-  .header__nav-list-item {
+  .header__nav__list__item {
     margin-right: 1rem;
     font-size: 15px;
   }
@@ -276,20 +276,20 @@ input {
     margin-top: 1.5rem;
   }
 
-  .main__sb-list {
+  .main__sb__list {
     margin-top: 1rem;
   }
 
-  .main__sb-heading {
+  .main__sb__heading {
     font-size: 20px;
   }
 
-  .main__sb-item {
+  .main__sb__list__item {
     font-size: 0.9rem;
     line-height: 16px;
   }
 
-  .main__sb-help {
+  .main__sb__link {
     font-size: 0.9rem;
   }
 
@@ -314,12 +314,12 @@ input {
     width: 100%;
   }
 
-  .header__nav-list {
+  .header__nav__list {
     width: 100%;
     margin-right: 0;
   }
 
-  .header__nav-list-item {
+  .header__nav__list__item {
     width: 25%;
     align-items: center;
     justify-content: center;
@@ -385,25 +385,25 @@ input {
     justify-content: left;
   }
 
-  .main__sb-wrap {
+  .main__sb__wrap {
     padding-right: 0;
     position: relative;
   }
 
-  .main__sb-heading {
+  .main__sb__heading {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
   }
 
-  .main__sb-list {
+  .main__sb__list {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .main__sb-item {
+  .main__sb__list__item {
     margin-bottom: 0;
     width: 25%;
     text-align: center;
@@ -411,7 +411,7 @@ input {
     font-size: 1rem;
   }
 
-  .main__sb-help {
+  .main__sb__link {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -429,7 +429,7 @@ input {
     column-gap: 0;
   }
 
-  .main__box-container {
+  .main__box__container {
     margin-top: 1rem;
   }
 
@@ -448,11 +448,11 @@ input {
 }
 
 @media (max-width: 600px) {
-  .main__sb-item {
+  .main__sb__list__item {
     width: 50%;
   }
 
-  .main__sb-help {
+  .main__sb__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -460,15 +460,15 @@ input {
     text-align: center;
   }
 
-  .main__sb-img {
+  .main__sb__link__img {
     margin-left: 0;
   }
 
-  .header__nav-list {
+  .header__nav__list {
     flex-wrap: wrap;
   }
 
-  .header__nav-list-item {
+  .header__nav__list__item {
     width: 50%;
     line-height: 2.5rem;
   }
@@ -483,17 +483,17 @@ input {
     right: 8rem;
   }
 
-  .main__sb-img {
+  .main__sb__link__img {
     margin-right: 0.5rem;
   }
 }
 
 @media (max-width: 350px) {
-  .main__sb-img {
+  .main__sb__link__img {
     margin-right: 0;
   }
 
-  .main__sb-help {
+  .main__sb__link {
     padding: 0 0.5rem;
   }
 }
