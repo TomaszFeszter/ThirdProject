@@ -9,13 +9,18 @@
   src: url("fonts/CircularStd-Black.otf");
 }
 
+body {
+  font-family: "Circular Std Black";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 ul,
 ol {
   list-style: none;
-}
-
-body {
-  font-family: "Circular Std Black";
 }
 
 .container {
@@ -93,7 +98,6 @@ input {
 .header__nav-icon:not(:last-child) {
   margin-right: 1.5rem;
 }
-
 
 .header__nav-img {
   cursor: pointer;
